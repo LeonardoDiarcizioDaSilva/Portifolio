@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+@import url(styles/header.css);
+@import url(styles/inicio.css);
+@import url(styles/sobre__mim.css);
+@import url(styles/projetos.css);
+@import url(styles/habilidades.css);
+@import url(styles/footer.css);
+
+:root {
+    --branco: #fff;
+    --sombra: #000;
+    --fundo: #00337C;
+    --fundo2: #10004b;
+    --footer: #13005A;
+    --laranja: #ffa500;
+    --azul-escuro: #000058;
+    --verde-claro: #03C988;
+    --borda-botoes: #1C82AD;
+    --montserrat: 'Montserrat', sans-serif;
+    --roboto: 'Roboto', 'monospace';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--fundo);
+    color: var(--branco);
+    text-shadow: 1px 1px 1px var(--sombra);
+}
+
+a, h3 {
+    text-decoration: none;
+    color: var(--verde-claro);
+}
