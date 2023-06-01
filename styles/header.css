@@ -10,9 +10,8 @@
     display: inline-block;
 }
 
-
 .cabecalho {
-    background-color: var(--footer);
+    background: var(--footer);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,10 +25,11 @@
 }
 
 .lista__container {
+    background: var(--footer);
     display: none;
     position: absolute;
     top: 100%;
-    width: 60vw;
+    width: 100%;
 }
 
 .check-box:checked ~.lista__container {
@@ -37,7 +37,6 @@
 }
 
 .lista__titulo, .item__lista {
-    background-color: var(--footer);
     padding: 1rem 1rem;
 }
 
@@ -53,6 +52,13 @@
     text-decoration: none;
     font-family: var(--roboto);
     font-weight: 700;
+}
+
+.header__botoes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
 }
 
 .container__img {

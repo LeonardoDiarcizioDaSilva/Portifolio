@@ -21,6 +21,10 @@
     --roboto: 'Roboto', 'monospace';
 }
 
+body, html {
+    height: 100%;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -34,4 +38,23 @@ body {
 a, h3 {
     text-decoration: none;
     color: var(--verde-claro);
+}
+
+.botao-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 0.5em;
+    border: 3px solid var(--borda-botoes);
+    border-radius: 2em;
+    padding: 0.2em;
+    font-weight: 700;
+    font-family: var(--roboto);
+}
+
+.logo-linkedin {
+    width: 30%;
+}
+.logo-github {
+    width: 32.7%;
 }
