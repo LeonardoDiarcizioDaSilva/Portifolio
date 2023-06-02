@@ -40,11 +40,11 @@
     justify-content: space-between;
 }
 
-.lista__botao-link > .github__container {
+.botao-link > .github__container {
     padding-right: 0.2em;
 }
 
-.lista__botao-link:hover {
+.botao-link:hover {
     background: var(--azul-escuro);
 }
 
