@@ -3,7 +3,6 @@
     text-align: center;
     margin: 1em 0 1em 0;
     padding: 2em 0;
-    background: var(--fundo2);
 }
 
 .sobre-mim__img {
@@ -18,29 +17,30 @@
     margin-bottom: 1em;
     font-family: var(--roboto);
     font-weight: 700;
+    font-size: larger;
 }
 
 .sobre-mim__texto {
-    padding: 0.1em 1em;
+    padding: 0.1em 0.5em;
     font-family: var(--montserrat);
     font-weight: 400;
+    font-size: large;
 }
 
 @media screen and (min-width: 1024px) {
     #sobre__mim {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         height: 100vh;
     }
 
     .sobre-mim__texto {
-        font-weight: 700;
+        font-weight: 400;
     }
 
     .sobre-mim__img {
-        width: 30%;
-        height: 40%;
+        width: 25%;
     }
 
     .sobre-mim__texto {
@@ -48,17 +48,8 @@
     }
 }
 
-@media screen and (min-width: 1400px) {
-    #sobre__mim {
-        justify-content: space-evenly;
-    }
 
-    .sobre-mim__img {
-        width: 25%;
-    }
-}
-
-@media screen and (min-width: 1650px) {
+@media screen and (min-width: 1600px) {
     .sobre-mim__img {
         width: 20%;
     }

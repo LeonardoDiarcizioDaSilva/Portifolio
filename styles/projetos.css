@@ -9,24 +9,87 @@
     margin: 1em 0;
     font-family: var(--roboto);
     font-weight: 700;
+    font-size: larger;
 }
 
-.projetos__imagens {
-    margin: 3em 0;
-    width: 85%;
-    border: 2px solid var(--sombra);
-    border-radius: 2em;
+.projetos__img {
+    width: 90%;
+
+    border: 2px solid var(--preto);
+    border-radius: 1em;
 }
 
-.projetos__imagens:hover {
-    transform: scale(1.05);
+.projetos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
 }
 
-.projetos-img3, .projetos-img4, .projetos-img5, .projetos-img6 {
+.primeito-projeto__javascript {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.projetos__texto {
+    width: 90vw;
+
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: large;
+}
+
+.jogo__click, .alura-books {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
 }
 
 @media screen and (min-width: 1024px) {
+
+    #projetos {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .projetos__titulo {
+        margin-bottom: 5em;
+    }
+
+    .projetos__container-imagens {
+        display: flex;
+    }
+
+    .jogo__click {
+        display: flex;
+    }
+
+    .projetos__img {
+        width: 90%;
+    }
+
+    .projetos__texto {
+        width: 60%;
+    }
+
+    .primeito-projeto__javascript {
+        width: 50%;
+    }
+    .jogo__click {
+        width: 50%;
+    }
+    .alura-books {
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+
     #projetos {
         height: 100vh;
         text-align: unset;
@@ -34,29 +97,43 @@
         align-items: center;
     }
 
-    .projetos-img3 {
+    .projetos__titulo {
+        margin-bottom: 5em;
+    }
+
+    .alura-books {
         display: flex;
     }
 
-    .projetos__imagens {
-        width: 30%;
+    .primeito-projeto__javascript {
+        width: 50%;
     }
-
-    .projetos__container-imagens {
-        display: flex;
-        justify-content: space-around;
+    .jogo__click {
+        width: 50%;
     }
-
+    .alura-books {
+        width: 50%;
+    }
 }
 
-@media screen and (min-width: 1400px) {
-    .projetos-img4, .projetos-img5, .projetos-img6 {
-        display: flex;
+
+@media screen and (min-width: 1600px) {
+
+    .projetos__img {
+        width: 100%;
     }
 
-    .projetos__container-imagens {
-        margin: auto;
-        flex-wrap: wrap;
-        width: 70%;
+    .projetos__texto {
+        width: 50%;
+    }
+
+    .primeito-projeto__javascript {
+        width: 50%;
+    }
+    .jogo__click {
+        width: 50%;
+    }
+    .alura-books {
+        width: 50%;
     }
 }

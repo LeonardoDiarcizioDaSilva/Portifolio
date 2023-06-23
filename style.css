@@ -6,17 +6,20 @@
 @import url(styles/projetos.css);
 @import url(styles/habilidades.css);
 @import url(styles/footer.css);
+@import url(styles/dark-mode.css);
 
 :root {
     --branco: #fff;
-    --sombra: #000;
-    --fundo: #00337C;
-    --fundo2: #10004b;
-    --footer: #13005A;
-    --laranja: #ffa500;
-    --azul-escuro: #000058;
-    --verde-claro: #03C988;
-    --borda-botoes: #1C82AD;
+    --preto: #000;
+    --fundo: #F6F6F6;
+    --azul: #00C2FF;
+    --laranja: #faa200;
+    --borda-botao-linkedin: #00FFF0;
+    --background-botao-linkedin: rgba(0, 255, 240, 0.06);
+    --background2-botao-linkedin: rgba(0, 255, 240, 0.2);
+    --borda-botao-github: #C13FB4;
+    --background-botao-github: rgba(193, 63, 180, 0.06);
+    --background2-botao-github: rgba(193, 63, 180, 0.2);
     --montserrat: 'Montserrat', sans-serif;
     --roboto: 'Roboto', 'monospace';
 }
@@ -31,30 +34,77 @@ html {
 
 body {
     background: var(--fundo);
-    color: var(--branco);
-    text-shadow: 1px 1px 1px var(--sombra);
+    color: var(--preto);
 }
 
 a, h3 {
     text-decoration: none;
-    color: var(--verde-claro);
+    color: var(--preto);
 }
 
-.botao-link {
+.botoes {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0 0.5em;
-    border: 3px solid var(--borda-botoes);
     border-radius: 2em;
-    padding: 0.2em;
     font-weight: 700;
     font-family: var(--roboto);
 }
 
+.botao-linkedin {
+
+    border: 2px solid var(--borda-botao-linkedin);
+
+    background: var(--background-botao-linkedin);
+
+    width: 8em;
+    height: 2em;
+
+}
+.botao-menu-linkedin, .botao-linkedin:hover {
+    background: var(--background2-botao-linkedin);
+}
+
+
+.botao-github {
+
+    border: 2px solid var(--borda-botao-github);
+
+    background: var(--background-botao-github);
+
+    width: 8em;
+    height: 2em;
+
+}
+.botao-menu-github, .botao-github:hover {
+    background: var(--background2-botao-github);
+}
+
 .logo-linkedin {
-    width: 30%;
+    width: 22%;
 }
 .logo-github {
-    width: 32.7%;
+    width: 23%;
+}
+
+.saiba__mais {
+    width: 10em;
+    height: 2em;
+
+    background-color: var(--azul);
+
+    border: 2px solid var(--borda-botao-linkedin);
+    border-radius: 2em;
+
+    font-family: var(--roboto);
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alura {
+    text-decoration: underline;
 }
